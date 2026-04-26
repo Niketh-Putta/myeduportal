@@ -672,11 +672,9 @@ body {
 
     /* Bento Grid (Single Column for Mobile) */
     .bento-grid-premium { grid-template-columns: 1fr; }
-    .bento-card.featured { grid-column: span 1; min-height: 400px; }
-    .wide-card { grid-column: span 1; padding: 40px 30px; }
-    .featured h2 { font-size: 2.2rem; }
-    .featured p { max-width: 100%; font-size: 1.1rem; }
-    .metric-row { flex-direction: column; gap: 30px; }
+    .card-top { flex-direction: row; justify-content: flex-start; gap: 15px; align-items: center; margin-bottom: 24px; }
+    .status-pill { margin-bottom: 0; }
+    .card-category { margin-bottom: 0; white-space: nowrap; }
     
     /* Method Steps */
     .method-steps { grid-template-columns: 1fr; gap: 20px; }
