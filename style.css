@@ -630,13 +630,23 @@ body {
 
 .footer-bottom { border-top: 1px solid rgba(0,0,0,0.05); padding-top: 40px; text-align: center; color: var(--text-soft); font-size: 0.85rem; }
 
-/* Responsive */
+/* Responsive Nav Fixes */
 @media (max-width: 1024px) {
-    .hero-title { font-size: 3.5rem; }
-    .bento-layout, .method-steps, .collective-grid, .booking-glass-card { grid-template-columns: 1fr; gap: 40px; }
-    .featured-glass { grid-column: auto; grid-row: auto; }
-    .booking-glass-card { padding: 40px 30px; }
-    .container { padding: 0 30px; }
+    .glass-nav-container { top: 15px; }
+    .glass-nav { padding: 6px 8px 6px 20px; }
+    .nav-logo { height: 40px; width: 40px; }
+    .nav-links { gap: 16px; }
+    .nav-item { font-size: 0.85rem; }
+    .btn-minimal { margin-right: 12px; font-size: 0.8rem; }
+    .btn-glass-cta { padding: 8px 16px; font-size: 0.8rem; }
+}
+
+@media (max-width: 768px) {
+    .nav-center { display: none; } /* Hide links on mobile for premium simplicity */
+    .glass-nav { padding: 6px 8px 6px 12px; max-width: 90%; margin: 0 auto; }
+    .nav-logo { height: 36px; width: 36px; }
+    .btn-minimal { display: none; } /* Focus only on main CTA on mobile */
+    .btn-glass-cta { padding: 10px 20px; font-size: 0.85rem; border-radius: 50px; }
 }
     .container { padding: 0 30px; }
 }
