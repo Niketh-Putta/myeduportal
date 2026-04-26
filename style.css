@@ -82,10 +82,11 @@ body {
 }
 
 .nav-logo {
-    height: 34px;
+    height: 48px;
     display: block;
-    mix-blend-mode: multiply;
+    mix-blend-mode: darken;
     transition: transform 0.3s ease;
+    border-radius: 8px;
 }
 
 .nav-logo:hover {
@@ -588,7 +589,7 @@ body {
     margin-bottom: 80px;
 }
 
-.footer-logo { height: 32px; margin-bottom: 32px; }
+.footer-logo { height: 42px; margin-bottom: 32px; mix-blend-mode: darken; }
 .footer-nav { display: flex; gap: 100px; }
 .f-col h6 { margin-bottom: 24px; text-transform: uppercase; letter-spacing: 0.1em; }
 .f-col a { display: block; margin-bottom: 12px; text-decoration: none; color: var(--text-soft); transition: color 0.3s; }
