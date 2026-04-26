@@ -630,23 +630,80 @@ body {
 
 .footer-bottom { border-top: 1px solid rgba(0,0,0,0.05); padding-top: 40px; text-align: center; color: var(--text-soft); font-size: 0.85rem; }
 
-/* Responsive Nav Fixes */
+/* Responsive Design: The Great Refinement */
+
+@media (max-width: 1200px) {
+    .container { padding: 0 40px; }
+    .hero-title { font-size: 4rem; }
+    .featured h2 { font-size: 2.8rem; }
+}
+
 @media (max-width: 1024px) {
-    .glass-nav-container { top: 15px; }
-    .glass-nav { padding: 6px 8px 6px 20px; }
-    .nav-logo { height: 40px; width: 40px; }
-    .nav-links { gap: 16px; }
-    .nav-item { font-size: 0.85rem; }
-    .btn-minimal { margin-right: 12px; font-size: 0.8rem; }
-    .btn-glass-cta { padding: 8px 16px; font-size: 0.8rem; }
+    .hero-studio { padding: 200px 0 100px; }
+    .hero-title { font-size: 3.5rem; }
+    .bento-grid-premium { grid-template-columns: repeat(2, 1fr); }
+    .bento-card.featured { grid-column: span 2; }
+    .wide-card { grid-column: span 2; }
+    .booking-glass-card { padding: 60px; }
 }
 
 @media (max-width: 768px) {
-    .nav-center { display: none; } /* Hide links on mobile for premium simplicity */
-    .glass-nav { padding: 6px 8px 6px 12px; max-width: 90%; margin: 0 auto; }
-    .nav-logo { height: 36px; width: 36px; }
-    .btn-minimal { display: none; } /* Focus only on main CTA on mobile */
-    .btn-glass-cta { padding: 10px 20px; font-size: 0.85rem; border-radius: 50px; }
+    .container { padding: 0 25px; }
+    
+    /* Global Spacing Reductions */
+    section { padding: 80px 0 !important; }
+    
+    /* Navigation */
+    .nav-center { display: none; }
+    .glass-nav { padding: 6px 8px 6px 15px; width: 95%; }
+    .btn-minimal { display: none; }
+
+    /* Hero Section */
+    .hero-studio { padding: 160px 0 60px; }
+    .hero-title { font-size: 2.8rem; line-height: 1.1; }
+    .hero-lead { font-size: 1.1rem; padding: 0 10px; }
+    .btn-solid-premium { padding: 16px 32px; font-size: 0.95rem; }
+
+    /* Bento Grid (Single Column for Mobile) */
+    .bento-grid-premium { grid-template-columns: 1fr; }
+    .bento-card.featured { grid-column: span 1; min-height: 400px; }
+    .wide-card { grid-column: span 1; padding: 40px 30px; }
+    .featured h2 { font-size: 2.2rem; }
+    .featured p { max-width: 100%; font-size: 1.1rem; }
+    .metric-row { flex-direction: column; gap: 30px; }
+    
+    /* Method Steps */
+    .method-steps { grid-template-columns: 1fr; gap: 20px; }
+    
+    /* Collective */
+    .collective-grid { grid-template-columns: 1fr; gap: 30px; }
+    .mentor-frame { height: 400px; }
+    .serif-title { font-size: 2.5rem; }
+
+    /* Booking Card */
+    .booking-glass-card { 
+        grid-template-columns: 1fr; 
+        padding: 40px 30px; 
+        border-radius: 40px;
+        gap: 40px;
+    }
+    .booking-info h2 { font-size: 2.2rem; }
+    .booking-interface { width: 100%; }
+    
+    /* Community Banner */
+    .community-banner-glass { padding: 60px 30px; border-radius: 40px; }
+    .community-banner-glass h2 { font-size: 2.2rem; }
+    .community-banner-glass p { font-size: 1.1rem; margin-bottom: 40px; }
+    
+    /* Footer */
+    .footer-inner { flex-direction: column; gap: 50px; text-align: center; }
+    .footer-brand { align-items: center; display: flex; flex-direction: column; }
+    .footer-nav { flex-direction: column; gap: 40px; }
 }
-    .container { padding: 0 30px; }
+
+@media (max-width: 480px) {
+    .hero-title { font-size: 2.4rem; }
+    .featured h2 { font-size: 1.8rem; }
+    .serif-title { font-size: 2rem; }
+    .btn-solid-premium { width: 100%; text-align: center; }
 }
