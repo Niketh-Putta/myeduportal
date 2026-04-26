@@ -658,12 +658,14 @@ body {
 }
 
 @media (max-width: 768px) {
-    .btn-vision-mobile { display: block; margin: 0; font-size: 0.7rem; }
-    .nav-center { display: flex; justify-content: center; flex: 1; }
+    .glass-nav-container { top: 15px; }
+    .btn-vision-mobile { display: block; margin: 0; font-size: 0.65rem; }
+    .nav-center { display: flex; justify-content: center; flex: 1; padding: 0 5px; }
     .nav-links { display: none; }
-    .glass-nav { padding: 4px 6px; width: 98%; }
+    .glass-nav { padding: 4px 8px; width: 100%; border-radius: 50px; }
+    .nav-logo { height: 32px; width: auto; border-radius: 8px; }
     .btn-minimal { display: none; }
-    .btn-glass-cta { padding: 6px 12px; font-size: 0.7rem; }
+    .btn-glass-cta { padding: 6px 10px; font-size: 0.65rem; border-radius: 40px; }
 
     /* Ultra Compact Spacing */
     section { padding: 30px 0 !important; }
