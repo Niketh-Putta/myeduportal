@@ -708,8 +708,18 @@ body {
 }
 
 @media (max-width: 480px) {
-    .hero-title { font-size: 2.4rem; }
-    .featured h2 { font-size: 1.8rem; }
-    .serif-title { font-size: 2rem; }
-    .btn-solid-premium { width: 100%; text-align: center; }
+    .hero-title { font-size: 2.1rem; } /* Reduced from 2.4rem */
+    .hero-lead { display: none; } /* Remove secondary text for aesthetic fit on small screens */
+    .hero-studio { padding: 180px 0 40px; }
+    .featured h2 { font-size: 1.6rem; }
+    .serif-title { font-size: 1.8rem; }
+    .btn-solid-premium { width: 100%; text-align: center; font-size: 0.85rem; padding: 14px 20px; }
+    .container { padding: 0 20px; }
+    body { font-size: 14px; } /* Global zoom out effect */
+}
+
+@media (max-width: 360px) {
+    .hero-title { font-size: 1.8rem; }
+    .nav-logo { height: 28px; width: 28px; }
+    .btn-glass-cta { padding: 6px 12px; font-size: 0.75rem; }
 }
