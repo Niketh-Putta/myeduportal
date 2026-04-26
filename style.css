@@ -658,14 +658,14 @@ body {
 }
 
 @media (max-width: 768px) {
-    .glass-nav-container { top: 15px; }
-    .btn-vision-mobile { display: block; margin: 0; font-size: 0.65rem; }
-    .nav-center { display: flex; justify-content: center; flex: 1; padding: 0 5px; }
+    .glass-nav-container { top: 10px; }
+    .btn-vision-mobile { display: block; margin: 0; font-size: 0.6rem; white-space: nowrap; }
+    .nav-center { display: flex; justify-content: center; flex: 1; padding: 0 2px; }
     .nav-links { display: none; }
-    .glass-nav { padding: 4px 8px; width: 100%; border-radius: 50px; }
-    .nav-logo { height: 32px; width: auto; border-radius: 8px; }
+    .glass-nav { padding: 3px 5px; width: 100%; border-radius: 40px; }
+    .nav-logo { height: 26px; width: auto; border-radius: 6px; }
     .btn-minimal { display: none; }
-    .btn-glass-cta { padding: 6px 10px; font-size: 0.65rem; border-radius: 40px; }
+    .btn-glass-cta { padding: 5px 8px; font-size: 0.6rem; border-radius: 30px; white-space: nowrap; }
 
     /* Ultra Compact Spacing */
     section { padding: 30px 0 !important; }
