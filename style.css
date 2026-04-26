@@ -663,7 +663,7 @@ body {
     .btn-minimal { display: none; }
 
     /* Hero Section */
-    .hero-studio { padding: 160px 0 60px; }
+    .hero-studio { padding: 200px 0 60px; } /* Increased from 160px to 200px */
     .hero-title { font-size: 2.8rem; line-height: 1.1; }
     .hero-lead { font-size: 1.1rem; padding: 0 10px; }
     .btn-solid-premium { padding: 16px 32px; font-size: 0.95rem; }
