@@ -21,6 +21,8 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -28,6 +30,7 @@ body {
     background-color: var(--studio-bg);
     color: var(--text-deep);
     overflow-x: hidden;
+    width: 100%;
     line-height: 1.4;
 }
 
@@ -660,10 +663,10 @@ body {
 
 @media (max-width: 768px) {
     .glass-nav-container { top: 15px; }
-    .btn-vision-mobile { display: block; margin: 0; font-size: 0.7rem; white-space: nowrap; }
-    .nav-center { display: flex; justify-content: center; flex: 1; padding: 0 10px; }
+    .btn-vision-mobile { display: none !important; }
+    .nav-center { display: none; }
     .nav-links { display: none; }
-    .glass-nav { padding: 6px 12px; width: 100%; border-radius: 50px; }
+    .glass-nav { padding: 6px 12px; width: 100%; border-radius: 50px; justify-content: space-between; }
     .nav-logo { height: 32px; width: auto; border-radius: 8px; }
     .btn-minimal { display: none; }
     .btn-glass-cta { padding: 8px 16px; font-size: 0.75rem; border-radius: 40px; white-space: nowrap; }
